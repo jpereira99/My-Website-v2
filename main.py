@@ -80,5 +80,5 @@ def page_not_found(e):
     return render_template('404.html'), 404
 
 # run app
-app.run(debug = True)
+app.run(host='0.0.0.0', port='80')
 app.register_error_handler(404, page_not_found)
