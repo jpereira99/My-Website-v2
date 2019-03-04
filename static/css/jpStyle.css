@@ -1,0 +1,214 @@
+.animatedText {
+    display: inline;
+}
+
+.animatedText span:nth-child(2) {
+    -webkit-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+.animatedText span:nth-child(3) {
+    -webkit-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.animatedText span:nth-child(4) {
+    -webkit-animation-delay: 9s;
+    -ms-animation-delay: 9s;
+    animation-delay: 9s;
+}
+
+.animatedText span:nth-child(5) {
+    -webkit-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+}
+
+.animatedText span:nth-child(6) {
+    -webkit-animation-delay: 15s;
+    -ms-animation-delay: 15s;
+    animation-delay: 15s;
+}
+
+.animatedText span {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-animation: animateWord 18s linear infinite 0s;
+    -ms-animation: animateWord 18s linear infinite 0s;
+    animation: animateWord 18s linear infinite 0s;
+}
+
+@-webkit-keyframes animateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+    20% { opacity: 0; -webkit-transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@media screen and (max-width : 960px) {
+    #animatedTextDiv {
+        font-size:3.5em;
+    }
+
+    .aboutMeTopText{
+        font-size:1em;
+    }
+}
+
+@media screen and (min-width : 961px) {
+    #animatedTextDiv {
+        font-size:5em;
+    }
+
+    .aboutMeTopText{
+        font-size:1.5em;
+    }
+
+    .aboutMeTopText{
+        font-size:1.5em;
+    }
+}
+
+.resumeButton {
+    background-color: white;
+    border: none;
+    font-weight: 600;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.contactText{
+    color: white;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.breakBar{
+    width: 50%; height: 2px;
+    border-style: solid;
+    border-color: white;
+    background-color: white;
+    border-radius: 2px;
+    margin: 0 auto;
+}
+
+.portfolioText{
+    color: black;
+    font-family: Poppins;
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align:center;
+}
+
+.portfolioWrapper:hover .portfolioHover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.portfolioText {
+    color: black;
+    text-decoration: none;
+}
+
+.portfolioImage{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardHeadingText {
+    font-family: Poppins;
+    color: white;
+    font-size: 2em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.cardDateText {
+    font-family: Poppins;
+    color: grey;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.cardDescText {
+    font-family: Poppins;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.portfolioLinkButton {
+    background-color: black;
+    border: none;
+    font-weight: 600;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+}
+
+.fofHead {
+    font-family: Poppins;
+    color: black;
+    font-weight: 700;
+    text-align: center;
+    font-size: 7em;
+}
+
+.fofSub {
+    font-family: Poppins;
+    color: black;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.fofDesc {
+    font-family: Poppins;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.fofButton {
+    font-family: Poppins;
+    background-color: black;
+    border: none;
+    font-weight: 600;
+    color: white;
+    padding: 30px 64px;
+    text-align: center;
+    display: inline-block;
+    font-size: 32px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-decoration: none;
+}
+
+.container {
+    width: 150px;
+    height: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}​

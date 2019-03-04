@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JP | Homepage</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/uikit.min.css') }}" />
+    <script src="{{ url_for('static', filename='js/uikit.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/uikit-icons.min.js') }}"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet"/>
+
+    <link href="{{ url_for('static', filename='css/jpStyle.css') }}" rel="stylesheet"/>
+    <script src="/static/js/smoothScroll.js"></script>
+
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('.logoContainer .navbar-brand img').attr('src','/static/images/logoblack.png');
+                    $('.textContainer .text a').attr('style','font-family: Poppins; font-weight: 600; font-size: 15px; color: black');
+                }
+                if ($(this).scrollTop() < 200) {
+                    $('.logoContainer .navbar-brand img').attr('src','/static/images/logowhite.png');
+                    $('.textContainer .text a').attr('style','font-family: Poppins; font-weight: 600; font-size: 15px; color: white');
+                }
+            })
+        });
+    </script>
+
+</head>
+<body>
+
+<div id="header" uk-height-viewport="expand" class="uk-background-cover uk-width-expand" uk-parallax="bgy: -400" style="background-image: url('static/images/back.png');">
+
+    <div id="nav" style="cursor:auto; scroll-behavior: smooth;">
+        <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+            <nav class="uk-navbar-container">
+
+                <div class="uk-navbar-center">
+
+                    <div class="uk-container uk-container-expand">
+                        <div uk-navbar style="font-family: Poppins;">
+                            <ul class="uk-navbar-nav logoContainer textContainer">
+                                <li class="text"><a href="#portfolio" class="logoContainer navbar-brand" style="font-family: Poppins; font-weight: 600; font-size: 15px; color: white">Portfolio</a></li>
+                                <li><a href="#header" class="logoContainer navbar-brand" style="height: 65px; width: 100px"><img src="/static/images/logowhite.png"></a></li>
+                                <li class="text"><a href="#contact" class="logoContainer navbar-brand" style="font-family: Poppins; font-weight: 600; font-size: 15px; color: white">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div id="animatedTextWrapper" style="text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)">
+        <div id="animatedTextDiv" uk-parallax="opacity: 1,0; blur: 0,10; scale: 1,1.2; easing: 1.5;" style="font-family: Poppins;font-weight: 600;color: white;display:inline-block;text-align:left;">
+            engineering<br />
+            <span class="animatedText">
+                <span> creativity.</span>
+                <span> excellence.</span>
+                <span> movements.</span>
+                <span> passion.</span>
+                <span> experiences.</span>
+                <span> simplicity.</span>
+            </span>
+        </div>
+    </div>
+
+</div>
+
+<div id="prtfolio" class="uk-card uk-card-large uk-width-expand" >
+
+    <div id="portfolio" class="uk-padding-small" style="opacity: 0; cursor: default;">Congrats! You've found a hidden message</div>
+
+    <h1 id="portfolioHeader" class="uk-padding-small uk-padding-remove-bottom" style="font-size: 75px; font-weight: 700; font-family:Poppins; color:black;text-align:center;">Portfolio</h1>
+
+    <div class="uk-child-width-1-3@m uk-child-width-1-1@s portfolioText uk-padding-large uk-padding-remove-top uk-grid-collapse" uk-grid>
+
+        <a class="uk-link-reset" href="/software">
+            <div id="code" class="uk-padding portfolioWrapper">
+                <p class="uk-padding-small portfolioText">Software</p>
+                <img src="/static/images/code.png" style="border-radius:1000px" class="portfolioHover portfolioImage">
+            </div>
+        </a>
+
+        <a class="uk-link-reset" href="/graphicdesign">
+            <div id="graphics" class="uk-padding portfolioWrapper">
+                <p class="uk-padding-small portfolioText">Graphics</p>
+                <img src="/static/images/graphic.png" style="border-radius:1000px" class="portfolioHover portfolioImage">
+            </div>
+        </a>
+
+        <a class="uk-link-reset" href="/photography">
+            <div id="photos" class="uk-padding portfolioWrapper">
+                <p class="uk-padding-small portfolioText">Photos</p>
+                <img src="/static/images/photo.png" style="border-radius:1000px" class="portfolioHover portfolioImage">
+            </div>
+        </a>
+
+
+    </div>
+
+
+</div>
+
+<div id="contct" class="uk-card uk-card-secondary uk-width-expand">
+
+    <div id="contact" class="uk-padding-small" style="opacity: 0; cursor: default;">Congrats! You've found a hidden message</div>
+
+    <div id="contactWrapper" uk-grid class="uk-grid-collapse uk-grid-match" style="font-family: Poppins; color: white;">
+
+        <div id="aboutMe" class="uk-width-1-2@m">
+            <div class="uk-card uk-padding-small uk-padding-remove-top">
+                <h2 align="center" style="font-size: 60px; font-weight: 700;">About Me</h2>
+                    <div style="margin: 0 auto; width: 80%;">
+                        <p class="uk-padding-small uk-width-expand aboutMeTopText uk-text-center" style="font-weight: 600;">Currently studying Computer Engineering with a concentration in Software Engineering and Design at Stevens Institute of Technology as a part of the Class of 2022.</p>
+                    </div>
+
+                <div id="resume" class="uk-padding-small" align="center">
+                    <a href="https://drive.google.com/open?id=1bk4udLhgm05VBc9otMPjNo2LsuKGFfTv" target="_blank" class="resumeButton" style="color:black; text-decoration: none;">SEE MY RESUME</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="contactCards" class="uk-width-1-2@m">
+            <div uk-card class="uk-card uk-padding-small uk-padding-remove-top">
+                <h2 align="center" style="font-size: 60px; font-weight: 700;">Contact</h2>
+
+                <div uk-card id="emailCard" class="uk-card uk-padding-small contactText">
+                    <a href="mailto:jpereir2@stevens.edu" style="text-decoration: none;display: table;margin: 0 auto;">
+                        <i class="im im-mail"></i>
+                        <p style="display: inline;"> Email</p>
+                    </a>
+                </div>
+
+                <div class="breakBar" align="center"></div>
+
+                <div uk-card id="LinkedInCard" class="uk-card uk-padding-small contactText">
+                    <a href="https://www.linkedin.com/in/jaydenpereira99/" target="_blank" style="text-decoration: none;display: table;margin: 0 auto;">
+                        <i class="im im-linkedin"></i>
+                        <p style="display: inline;"> LinkedIn</p>
+                    </a>
+                </div>
+
+                <div class="breakBar"></div>
+
+                <div uk-card id="GitHubCard" class="uk-card uk-padding-small contactText">
+                    <a href="https://github.com/jpereira99" target="_blank" style="text-decoration: none;display: table;margin: 0 auto;">
+                        <i class="im im-github"></i>
+                        <p style="display: inline;"> GitHub</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="uk-padding-small" style="opacity: 0; cursor: default;">Congrats! You've found a hidden message</div>
+
+</div>
+
+
+</body>
+</html>
