@@ -72,6 +72,15 @@ def webhook3():
     return '''Successfully submitted into database'''
 
 
+# -- BLOG PAGES -- #
+@app.route("/blog/")
+def blogMain():
+    return render_template("blogMain.html")
+
+@app.route("/blog/launchpad/1")
+def blogLaunchpad1():
+    return render_template("blogLaunchpad1.html")
+
 
 
 # -- ERROR PAGES -- #
