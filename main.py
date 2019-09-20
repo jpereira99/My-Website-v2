@@ -80,6 +80,9 @@ def blogMain():
 @app.route("/blog/launchpad/1")
 def blogLaunchpad1():
     return render_template("blogLaunchpad1.html")
+@app.route("/blog/launchpad/2")
+def blogLaunchpad2():
+    return render_template("blogLaunchpad2.html")
 
 
 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JP | Blog</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}" type="image/x-icon">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/uikit.min.css') }}" />
+    <script src="{{ url_for('static', filename='js/uikit.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/uikit-icons.min.js') }}"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet"/>
+
+    <link href="{{ url_for('static', filename='css/jpStyle.css') }}" rel="stylesheet"/>
+
+
+</head>
+<body>
+
+<div uk-height-viewport="expand" class="uk-width-expand uk-card">
+
+    <div id="nav" style="cursor:auto;">
+        <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+            <nav class="uk-navbar-container">
+
+                <div class="uk-navbar-center">
+
+                    <div class="uk-container uk-container-expand">
+                        <div uk-navbar style="font-family: Poppins;">
+                            <ul class="uk-navbar-nav logoContainer textContainer">
+                                <li class="text"><a href="/#portfolio" class="logoContainer navbar-brand" style="font-family: Poppins; font-weight: 600; font-size: 15px; color: black">Portfolio</a></li>
+                                <li><a href="/" class="logoContainer navbar-brand" style="height: 65px; width: 100px"><img src="/static/images/Logoblack.png"></a></li>
+                                <li class="text"><a href="/#contact" class="logoContainer navbar-brand" style="font-family: Poppins; font-weight: 600; font-size: 15px; color: black">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <h1 style="font-size: 3.5em; font-weight: 700; font-family:Poppins; color:black;text-align:center;">Blog</h1>
+
+    <div id="body" class="uk-width-1-2@m uk-padding-small" style="margin: auto; font-family: Poppins; color: black;">
+        <h3><b>It's All About Connections</b></h3>
+        <p style="color: grey;"><b>09/19/19</b></p>
+
+        <p>
+            Information and connections are at the core of Truthable - the sole reason of the company’s existence is to enlighten communities with accurate knowledge. These two pillars that stand to make the company are also the two pillars that create and maintain the communications between customer and company.
+        </p>
+
+        <p>
+            Customer discovery at Truthable is all about the connections, given my role as a Peer Leader and now going into the Sigma Phi Epsilon fraternity at Stevens, I am constantly around people in campus and am personally responsible for a group of new students that have lots of questions that need to be consistently answered. This helps me connect with the target groups of my user base every day and constantly gauge and find what problems they face on campus/in life and what kind of information they need. Since the community aspect of Truthable is so fundamental to the company, having the bonds and an interconnected group of users that grow but keep a common thread is pertinent to the strength of the product itself. Leveraging my roles on campus to grab and listen in on many different communities on the Stevens campus creates a big advantage when trying to discover what kind of customer will use Truthable.
+        </p>
+
+        <p>
+            This extension of community plays right in hand for customer validation. Being so connected to the users, there is a deep understanding and ease of outreach to target exactly what the user base needs. Reaching out to grab any necessary feedback (which is hyper-critical for where the company is right now) feels natural and does not require any “teeth pulling”. I see and converse with people that are giving relevant criticism every day and that agility creates an environment within the company that strives for constant iteration without losing focus on what really needs to be done for the users and not thinking or developing strategies that just won’t be useful for the people that use Truthable.
+        </p>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
