@@ -72,20 +72,6 @@ def webhook3():
     return '''Successfully submitted into database'''
 
 
-# -- BLOG PAGES -- #
-@app.route("/blog/")
-def blogMain():
-    return render_template("blogMain.html")
-
-@app.route("/blog/launchpad/1")
-def blogLaunchpad1():
-    return render_template("blogLaunchpad1.html")
-@app.route("/blog/launchpad/2")
-def blogLaunchpad2():
-    return render_template("blogLaunchpad2.html")
-
-
-
 # -- ERROR PAGES -- #
 @app.errorhandler(404)
 def page_not_found(e):
